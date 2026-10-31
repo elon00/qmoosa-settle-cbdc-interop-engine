@@ -1,9 +1,9 @@
-﻿// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-contract cbdcbridgerunToken {
-    string public name = "Cbdcbridge Run";
-    string public symbol = "CBDCBR";
+contract CryptoTokenBridgeRunToken {
+    string public name = "Crypto Token Bridge Run";
+    string public symbol = "CTBR";
     uint8 public constant decimals = 18;
     uint256 public totalSupply;
     uint256 public constant INITIAL_PRICE = 0.0001 ether;

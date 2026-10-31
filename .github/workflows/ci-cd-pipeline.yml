@@ -1,15 +1,33 @@
-﻿name: CI/CD Pipeline
+name: Prototype build and source analysis
 on: [push, pull_request]
+permissions:
+  contents: read
 jobs:
-  verify:
+  prototype-checks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.11'
-      - name: Smoke Tests
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22
+      - name: Local prototype smoke checks
         run: python tests/reality_check_harness.py
-      - name: CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
+      - name: Compile Rust prototype
+        run: cargo check --offline
+      - name: Compile Solidity prototype
+        run: npm exec --yes --package=solc@0.8.24 -- solcjs --bin contracts/LaunchpadToken.sol -o build/contracts
+  python-source-analysis:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: github/codeql-action/init@9b3254085494b55a0f7c4c2b3d2d52cc712ce370
+        with:
+          languages: python
+          queries: security-extended
+      - uses: github/codeql-action/analyze@9b3254085494b55a0f7c4c2b3d2d52cc712ce370

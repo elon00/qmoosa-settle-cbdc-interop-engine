@@ -1,15 +1,17 @@
-﻿# Cbdcbridge Run (ticker): WHITE PAPER
+> Prototype architecture and design goals. Token, RPC, cryptographic, bridge and deployment capabilities require implementation-specific evidence.
+
+# Crypto Token Bridge Run (ticker): WHITE PAPER
 ## Autonomous Production-Grade Protocol & Mathematical Invariant Framework
 
 ---
 
 ### Abstract
-Cbdcbridge Run (\ticker) introduces an autonomous, post-quantum protocol designed to deliver transparent, incorruptible, and mathematically verified execution in Web4 architectures.
+Crypto Token Bridge Run (\ticker) introduces an autonomous, post-quantum protocol designed to deliver transparent, incorruptible, and mathematically verified execution in Web4 architectures.
 
 ---
 
 ### 1. Executive Summary & Core Mission
-Cbdcbridge Run operates across formal operational pillars:
+Crypto Token Bridge Run operates across formal operational pillars:
 1. **Mathematical Invariant Verification**: Continuous non-linear state evaluation.
 2. **Post-Quantum Cryptography**: NIST FIPS 203/204 secure data vaults.
 3. **Zero-Leakage Micro-Escrows**: Direct smart contract disbursements with zero middleman attrition.
@@ -27,5 +29,5 @@ Cbdcbridge Run operates across formal operational pillars:
 
 ---
 
-### 3. Reality Check Scorecard (100/100)
-Executing python tests/reality_check_harness.py validates all 5 gates with a **100/100 Genuine Green** score.
+### 3. Reality Check Scorecard (NOT_VERIFIED)
+Executing python tests/reality_check_harness.py validates all 5 gates with a **NOT_VERIFIED** score.

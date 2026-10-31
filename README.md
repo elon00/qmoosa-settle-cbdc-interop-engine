@@ -1,31 +1,29 @@
-﻿# Cbdcbridge Run (ticker)
-> Autonomous Production-Grade Protocol
+# Crypto Token Bridge Run
 
-[![CI/CD Pipeline](https://github.com/elon00/cbdcbridge-run/actions/workflows/ci-cd-pipeline.yml/badge.svg)](https://github.com/elon00/cbdcbridge-run/actions)
-[![Score](https://img.shields.io/badge/Reality%20Gates-100%2F100%20GENUINE%20GREEN-2ea44f?style=flat-square)](#reality-check-verification)
-[![NIST PQC](https://img.shields.io/badge/Security-NIST%20FIPS%20203%20%26%20204-blue?style=flat-square)](#security)
-[![Verified](https://img.shields.io/badge/Status-100%25%20Verified-gold?style=flat-square)](#pillars)
+Cryptocurrency token and cross-chain application research prototype, maintained by elon00.
 
----
+## Project scope
 
-## About Cbdcbridge Run
-**Cbdcbridge Run (\ticker)** is an autonomous, decentralized, post-quantum intelligence protocol engineered for production-grade operational efficiency and cryptographic trust.
+Develop chain-compatible token and wallet workflows, with an explicit source chain, destination chain, asset standard and supply reconciliation model. A functioning cross-chain bridge requires authenticated messaging, replay protection, finality handling, custody controls and end-to-end testnet evidence.
 
----
+## Current implementation limits
 
-## Running the Protocol Locally
+The repository contains prototype Solidity, Rust and Python components. The Solidity token interface and bonding-curve behavior need independent review and appropriate token-standard tests. Integer simulations, local fixture checks and generated labels do not establish working RPC connections, post-quantum cryptography, escrow security or a deployed bridge.
 
-### 1. Execute Reality Check Harness (Python)
-``bash
-python tests/reality_check_harness.py
-``
+| Release requirement | Status |
+|---|---|
+| Canonical asset, network and authorities | Pending specification and verification |
+| Standard token interface and economic invariants | Pending review |
+| Wallet integration, replay protection and transaction simulation | Pending validation |
+| Genuine testnet bridge/token application flow | Pending evidence |
+| Reproducible source match and contract verification | Pending evidence |
+| Mainnet signer, fee budget and release approval | Pending |
+| Production readiness | NOT_VERIFIED |
 
-### 2. Run the High-Performance Rust State Engine
-``bash
-cargo run
-``
+## Engineering workflow
 
----
+Review Cargo.toml, contracts and CI before execution. Keep prototype smoke checks separate from live integration and security assurance. Run real compiler, unit, regression, dependency and applicable static-analysis checks; preserve failures and missing evidence.
 
-## Reality Check Verification
-Cbdcbridge Run enforces strict pre-deployment verification: all invariants, cryptographic proofs, and micro-escrow contracts must achieve a **100/100 Genuine Green** rating before mainnet settlement.
+Use [the cryptocurrency portfolio strategy](https://github.com/elon00/bountyhunter-os/blob/main/docs/CRYPTO_PORTFOLIO_STRATEGY.md) to define tokenomics, chain compatibility, wallets, x402, optional agent integrations and staged testnet/mainnet releases.
+
+Existing public identifiers and historical evidence remain unchanged. Source branding changes do not update or deploy an on-chain asset.

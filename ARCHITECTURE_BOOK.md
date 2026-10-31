@@ -1,9 +1,11 @@
-﻿# ARCHITECTURE BOOK: Cbdcbridge Run (ticker)
+> Prototype architecture and design goals. Token, RPC, cryptographic, bridge and deployment capabilities require implementation-specific evidence.
+
+# ARCHITECTURE BOOK: Crypto Token Bridge Run (ticker)
 ## Autonomous Production-Grade Protocol Architecture
 
 `
 +---------------------------------------------------------------------------------------+
-|                                    Cbdcbridge Run SYSTEM                                    |
+|                                    Crypto Token Bridge Run SYSTEM                                    |
 |                        Operational Topology & Invariant Lattice                       |
 +---------------------------------------------------------------------------------------+
                                            |
@@ -25,4 +27,4 @@
 `
 
 ### 1. Executive Summary
-Cbdcbridge Run (\ticker) is an autonomous, decentralized, post-quantum protocol engineered for production-grade operational efficiency and cryptographic trust.
+Crypto Token Bridge Run (\ticker) is an autonomous, decentralized, post-quantum protocol engineered for production-grade operational efficiency and cryptographic trust.
